@@ -1,24 +1,29 @@
-# README
+# Homepage for Christian Sørseth
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Homepage for Christian Sørseth
 
-Things you may want to cover:
+## Getting started
 
-* Ruby version
+Please ensure you have a recent version of **Rails 5.0** (`gem install rails
+--pre`) and are using **Ruby 2.3.0**. I suggest using `rbenv` to install the
+appropriate Ruby version.
 
-* System dependencies
+Install all the Gems required by the Rails app.
 
-* Configuration
+```bash
+$ bundle install
+```
 
-* Database creation
+You'll need to perform the database migrations before running the development server.
 
-* Database initialization
+```bash
+$ rails db:migrate
+```
 
-* How to run the test suite
+**If you are running this application inside Cloud9 or a virtual machine**,
+please ensure that the Rails server binds to `0.0.0.0` instead of `localhost`.
+Otherwise you will not be able to connect to it from the outside.
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```bash
+$ rails server -b 0.0.0.0 -p 8080
+```
