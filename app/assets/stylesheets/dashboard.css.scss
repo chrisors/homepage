@@ -1,0 +1,22 @@
+// Place all the styles related to the dashboard controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body.dashboard {
+  background-image: url(image-path('workdesk.jpg'));
+  background-size:cover
+}
+
+#navbar {
+    .item{
+        color: white;
+        font-size: 13px;
+        letter-spacing: 2px;
+        margin: 2em 0.75em 0.75em 0.75em;
+    }
+    #about {
+        border-color: white;
+        border: solid;
+        margin-right: 1em;
+    }
+}
