@@ -3,6 +3,17 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body.dashboard {
+    #dashboardGrid {
+        margin-top: 15rem !important;
+    }
+    #buttonRow {
+        .item {
+            border-color: white;
+            border: solid;
+            color: white;
+        }
+    }
+
   background-image: url(image-path('workdesk.jpg'));
   background-size:cover
 }
