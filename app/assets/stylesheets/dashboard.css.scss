@@ -2,15 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body.dashboard {
-    #dashboardGrid {
-        padding-top: 13rem !important;
-    }
+    background: url(image-path('workdesk.jpg'));
+    min-height: 100%;
     .body_container {
         height: 100%;
         width: 100%;
         background: radial-gradient(#40404b, #111118) rgba(34,34,40,0.94);
         background: -webkit-radial-gradient(#40404b, #111118) rgba(34,34,40,0.94);
         opacity: 0.9;
+    }
+    #dashboardGrid {
+        padding-top: 13rem !important;
     }
     #buttonRow {
         .item {
@@ -28,7 +30,6 @@ body.dashboard {
         letter-spacing: 2px;
         font-weight: bold;
     }
-  background: url(image-path('workdesk.jpg')) center no-repeat;
 }
 
 #navbar {
