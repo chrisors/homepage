@@ -1,10 +1,16 @@
 // Place all the styles related to the dashboard controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
 body.dashboard {
     #dashboardGrid {
-        margin-top: 13rem !important;
+        padding-top: 13rem !important;
+    }
+    .body_container {
+        height: 100%;
+        width: 100%;
+        background: radial-gradient(#40404b, #111118) rgba(34,34,40,0.94);
+        background: -webkit-radial-gradient(#40404b, #111118) rgba(34,34,40,0.94);
+        opacity: 0.9;
     }
     #buttonRow {
         .item {
@@ -23,11 +29,10 @@ body.dashboard {
         font-weight: bold;
     }
   background: url(image-path('workdesk.jpg')) center no-repeat;
-  background-size:cover;
 }
 
 #navbar {
-    .item{
+    .item {
         color: white;
         font-size: 13px;
         letter-spacing: 2px;
@@ -35,6 +40,20 @@ body.dashboard {
     }
     #contact {
         border-color: white;
+        border: solid;
+        margin-right: 1em;
+    }
+}
+
+#aboutNavbar {
+    .item {
+        color: black;
+        font-size: 13px;
+        letter-spacing: 2px;
+        margin: 2em 0.75em 0.75em 0.75em;
+    }
+    #contact {
+        border-color: black;
         border: solid;
         margin-right: 1em;
     }
