@@ -1,18 +1,20 @@
 // Place all the styles related to the dashboard controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-body.dashboard {
+.container.dashboard {
     background: url(image-path('workdesk.jpg'));
-    min-height: 100%;
+    height: 100%;
+    width: 100%;
     .body_container {
         height: 100%;
         width: 100%;
         background: radial-gradient(#40404b, #111118) rgba(34,34,40,0.94);
         background: -webkit-radial-gradient(#40404b, #111118) rgba(34,34,40,0.94);
-        opacity: 0.9;
+        opacity: 0.8;
     }
     #dashboardGrid {
         padding-top: 13rem !important;
+        margin-top: 0 !important;
     }
     #buttonRow {
         .item {
