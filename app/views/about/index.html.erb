@@ -1,17 +1,18 @@
-<div class="ui stackable  grid" id="aboutGrid">
+<div class="mobile hidden">
+<div class="ui four column stackable grid container" id="aboutGrid">
     <div class="row">
         <div class="two wide column"></div>
         <div class="center aligned six wide column"> 
-            <%= image_tag("christian_sorseth.jpg", :class => "ui circular image") %>
+            <%= image_tag("christian_sorseth.jpg", :class => "ui circular centered image") %>
         </div>
-        <div class="center aligned six wide column">
+        <div class="center aligned six wide column" id="contentColumn">
             <p>
                 <h1 class="about header">WHO IS CHRISTIAN?</h1>
-                <h4 class="ui horizontal divider header">
-                    <i class="university icon"></i>
-                        Education
-                </h4>
                 <div class="ui list">
+                    <h4 class="ui horizontal divider header">
+                        <i class="university icon"></i>
+                            Education
+                    </h4>
                     <div class="item">
                         <i class="student icon"></i> 
                         <div class="content">
@@ -42,7 +43,7 @@
                         <i class="desktop icon"></i> 
                         <div class="content">
                             <div class="left floated header">
-                                <%= link_to("Summer Internship", "https://www.no.capgemini.com/") %>
+                                <%= link_to("Internship - Summer of Code", "https://www.no.capgemini.com/") %>
                             </div></br>
                             <div class="left floated content">
                                 Capgemini Norway (2016)
@@ -71,20 +72,87 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </p>
+        </div>
+        <div class="two wide column"></div>
+    </div>
+</div>
+</div>
+<div class="mobile only">
+    <div class="ui two column stackable grid container" id="mobileAboutGrid">
+    <div class="row">
+        <div class="center aligned sixteen wide column" id="mobileImage"> 
+            <%= image_tag("christian_sorseth.jpg", :class => "ui circular large centered image") %>
+        </div>
+        <div class="center aligned sixteen wide column">
+            <p>
+                <h1 class="about header">WHO IS CHRISTIAN?</h1>
+                <div class="ui list">
+                    <h4 class="ui horizontal divider header">
+                            Education
+                    </h4>
+                    <div class="item">
+                        <i class="student icon"></i> 
+                        <div class="content">
+                            <div class="left floated header">
+                                <%= link_to("NTNU", "https://www.ntnu.no") %>
+                            </div>
+                            <div class="left floated description">
+                                Master's Degree in Information Security (2015 - 2017)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="student icon"></i> 
+                        <div class="content">
+                            <div class="left floated header">
+                                <%= link_to("UiS", "http://www.uis.no/") %>
+                            </div>
+                            <div class="left floated content">
+                                Bachelor Degree in Computer Science (2012 - 2015)
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="ui horizontal divider header" id="experienceDivider">
+                        Experience
+                    </h4>
                     <div class="item">
                         <i class="desktop icon"></i> 
                         <div class="content">
                             <div class="left floated header">
-                                <%= link_to("Sales clerk", "https://coop.no/obsbygg/") %>
-                            </div></br>
+                                <%= link_to("Internship - Summer of Code", "https://www.no.capgemini.com/") %>
+                            </div>
                             <div class="left floated content">
-                                Obs Bygg
+                                Capgemini Norway (2016)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="desktop icon"></i> 
+                        <div class="content">
+                            <div class="left floated header">
+                                <%= link_to("Operations Technician", "http://www.tampnet.com/") %>
+                            </div>
+                            <div class="left floated content">
+                                Tampnet (2015)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="desktop icon"></i> 
+                        <div class="content">
+                            <div class="left floated header">
+                                <%= link_to("Evaluation Committee Member", "https://www.ntnu.no") %>
+                            </div>
+                            <div class="left floated content">
+                                NTNU (2015 - 2017)
                             </div>
                         </div>
                     </div>
                 </div>
             </p>
         </div>
-        <div class="two wide column"></div>
     </div>
+</div>
 </div>

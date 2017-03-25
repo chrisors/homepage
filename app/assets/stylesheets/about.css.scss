@@ -5,6 +5,103 @@
 #aboutGrid {
     padding-top: 10rem !important;
 }
+#mobileAboutGrid { /* mobile view */
+  padding-top: 15rem !important;
+
+  #mobileImage {
+    padding-bottom: 5rem;
+  }
+  .ui.list {
+ //   font-size: 2em;
+    .item {
+ //     font-size: 1.5em;
+    }
+    #experienceDivider {
+      padding-top: 4rem;
+    }
+  }
+  .about.header {
+    letter-spacing: 2px;
+ //   font-size: 4em;
+    padding-bottom: 2rem;
+  }
+/*  .ui.horizontal.divider.header {
+    font-size: 1.5em;
+  }*/
+}
 .about.header {
     letter-spacing: 2px;
+    margin-bottom: 1em !important;
+    margin-top: 0 !important;
+}
+#contentColumn {
+  padding-left: 2em;
+}
+/* Mobile */
+
+@media only screen and (max-width: 1000px) {
+  [class*="mobile hidden"],
+  [class*="tablet only"]:not(.mobile),
+  [class*="computer only"]:not(.mobile),
+  [class*="large monitor only"]:not(.mobile),
+  [class*="widescreen monitor only"]:not(.mobile),
+  [class*="or lower hidden"] {
+    display: none !important;
+  }
+}
+
+
+/* Tablet / iPad Portrait */
+
+@media only screen and (min-width: 1001px) and (max-width: 1300px) {
+  [class*="mobile only"]:not(.tablet),
+  [class*="tablet hidden"],
+  [class*="computer only"]:not(.tablet),
+  [class*="large monitor only"]:not(.tablet),
+  [class*="widescreen monitor only"]:not(.tablet),
+  [class*="or lower hidden"]:not(.mobile) {
+    display: none !important;
+  }
+}
+
+
+/* Computer / Desktop / iPad Landscape */
+
+@media only screen and (min-width: 1301px) and (max-width: 1499px) {
+  [class*="mobile only"]:not(.computer),
+  [class*="tablet only"]:not(.computer),
+  [class*="computer hidden"],
+  [class*="large monitor only"]:not(.computer),
+  [class*="widescreen monitor only"]:not(.computer),
+  [class*="or lower hidden"]:not(.tablet):not(.mobile) {
+    display: none !important;
+  }
+}
+
+
+/* Large Monitor */
+
+@media only screen and (min-width: 1200px) and (max-width: 1919px) {
+  [class*="mobile only"]:not([class*="large monitor"]),
+  [class*="tablet only"]:not([class*="large monitor"]),
+  [class*="computer only"]:not([class*="large monitor"]),
+  [class*="large monitor hidden"],
+  [class*="widescreen monitor only"]:not([class*="large monitor"]),
+  [class*="or lower hidden"]:not(.computer):not(.tablet):not(.mobile) {
+    display: none !important;
+  }
+}
+
+
+/* Widescreen Monitor */
+
+@media only screen and (min-width: 1920px) {
+  [class*="mobile only"]:not([class*="widescreen monitor"]),
+  [class*="tablet only"]:not([class*="widescreen monitor"]),
+  [class*="computer only"]:not([class*="widescreen monitor"]),
+  [class*="large monitor only"]:not([class*="widescreen monitor"]),
+  [class*="widescreen monitor hidden"],
+  [class*="widescreen monitor or lower hidden"] {
+    display: none !important;
+  }
 }
