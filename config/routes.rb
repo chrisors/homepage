@@ -3,5 +3,8 @@ Rails.application.routes.draw do
   get 'dashboard/index'
   root to: 'dashboard#index'
 
+  match '/contacts',     to: 'contacts#new',             via: 'get'
+  resources "contacts", only: [:new, :create]
+
   get 'about/index'
 end
