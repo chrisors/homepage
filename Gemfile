@@ -36,6 +36,10 @@ gem 'semantic-ui-sass'
 gem 'mail_form'
 gem 'simple_form'
 
+group :development, :test do
+  gem 'foreman'
+end
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

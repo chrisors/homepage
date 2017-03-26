@@ -9,7 +9,7 @@ class ContactsController < ApplicationController
         if @contact.deliver
             flash.now[:notice] = 'Thank you for your message, you will soon be contacted!'
         else
-            flasf.now[:notice] = 'Failed to send message, try again.'
+            flash.now[:notice] = 'Failed to send message, try again.'
             render :new
         end
     end

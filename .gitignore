@@ -31,3 +31,6 @@ config/secrets.yml
 .idea/
 .vscode/
 .DS_STORE
+
+# Ignore .env files
+/config/local_env.yml
