@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .container.dashboard {
     background: url(image-path('workdesk.jpg'));
+    background-size:cover;
     height: 100%;
     width: 100%;
     .body_container {
