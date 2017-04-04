@@ -28,10 +28,15 @@
         }
     }
     #header {
-        font-size: 70px;
+        font-size: 5.5rem;
         color: white;
         letter-spacing: 2px;
         font-weight: bold;
+    }
+    @media (max-width: 500px) {
+        #header {
+            font-size: 3rem;
+        }
     }
 }
 
