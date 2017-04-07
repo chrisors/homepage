@@ -1,158 +1,191 @@
 <div class="mobile hidden">
-<div class="ui four column stackable grid container" id="aboutGrid">
-    <div class="row">
-        <div class="two wide column"></div>
-        <div class="center aligned six wide column"> 
-            <%= image_tag("christian_sorseth.jpg", :class => "ui circular centered image") %>
+    <div class="ui four column stackable grid container" id="aboutGrid">
+        <div class="row">
+            <div class="two wide column"></div>
+            <div class="center aligned six wide column"> 
+                <%= image_tag("christian_sorseth.jpg", :class => "ui circular centered image") %>
+            </div>
+            <div class="center aligned six wide column" id="contentColumn">
+                <p>
+                    <h1 class="about header">WHO IS CHRISTIAN?</h1>
+                    <div class="ui list">
+                        <h4 class="ui horizontal divider header">
+                            <i class="university icon"></i>
+                                Education
+                        </h4>
+                        <div class="item">
+                            <i class="student icon"></i> 
+                            <div class="content">
+                                <div class="left floated header">
+                                    <%= link_to("Norwegian University of Science and Technology (NTNU)", "https://www.ntnu.no") %>
+                                </div>
+                                <div class="left floated description">
+                                    Master's Degree in Information Security (2015 - 2017)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="student icon"></i> 
+                            <div class="content">
+                                <div class="left floated header">
+                                    <%= link_to("University of Stavanger (UiS)", "http://www.uis.no/") %>
+                                </div>
+                                <div class="left floated content">
+                                    Bachelor Degree in Computer Science (2012 - 2015)
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="ui horizontal divider header">
+                            <i class="suitcase icon"></i>
+                            Experience
+                        </h4>
+                        <div class="item">
+                            <i class="desktop icon"></i> 
+                            <div class="content">
+                                <div class="left floated header">
+                                    <%= link_to("Internship - Summer of Code", "https://www.no.capgemini.com/") %>
+                                </div></br>
+                                <div class="left floated content">
+                                    Capgemini Norway (2016)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="desktop icon"></i> 
+                            <div class="content">
+                                <div class="left floated header">
+                                    <%= link_to("Operations Technician", "http://www.tampnet.com/") %>
+                                </div></br>
+                                <div class="left floated content">
+                                    Tampnet (2015)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="desktop icon"></i> 
+                            <div class="content">
+                                <div class="left floated header">
+                                    <%= link_to("Evaluation Committee Member", "https://www.ntnu.no") %>
+                                </div></br>
+                                <div class="left floated content">
+                                    Norwegian University of Science and Technology (2015 - 2017)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </p>
+            </div>
+            <div class="two wide column"></div>
         </div>
-        <div class="center aligned six wide column" id="contentColumn">
-            <p>
-                <h1 class="about header">WHO IS CHRISTIAN?</h1>
-                <div class="ui list">
-                    <h4 class="ui horizontal divider header">
-                        <i class="university icon"></i>
-                            Education
-                    </h4>
-                    <div class="item">
-                        <i class="student icon"></i> 
-                        <div class="content">
-                            <div class="left floated header">
-                                <%= link_to("Norwegian University of Science and Technology (NTNU)", "https://www.ntnu.no") %>
-                            </div>
-                            <div class="left floated description">
-                                Master's Degree in Information Security (2015 - 2017)
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <i class="student icon"></i> 
-                        <div class="content">
-                            <div class="left floated header">
-                                <%= link_to("University of Stavanger (UiS)", "http://www.uis.no/") %>
-                            </div>
-                            <div class="left floated content">
-                                Bachelor Degree in Computer Science (2012 - 2015)
-                            </div>
-                        </div>
-                    </div>
-                    <h4 class="ui horizontal divider header">
-                        <i class="suitcase icon"></i>
-                        Experience
-                    </h4>
-                    <div class="item">
-                        <i class="desktop icon"></i> 
-                        <div class="content">
-                            <div class="left floated header">
-                                <%= link_to("Internship - Summer of Code", "https://www.no.capgemini.com/") %>
-                            </div></br>
-                            <div class="left floated content">
-                                Capgemini Norway (2016)
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <i class="desktop icon"></i> 
-                        <div class="content">
-                            <div class="left floated header">
-                                <%= link_to("Operations Technician", "http://www.tampnet.com/") %>
-                            </div></br>
-                            <div class="left floated content">
-                                Tampnet (2015)
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <i class="desktop icon"></i> 
-                        <div class="content">
-                            <div class="left floated header">
-                                <%= link_to("Evaluation Committee Member", "https://www.ntnu.no") %>
-                            </div></br>
-                            <div class="left floated content">
-                                Norwegian University of Science and Technology (2015 - 2017)
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </p>
-        </div>
-        <div class="two wide column"></div>
     </div>
-</div>
 </div>
 <div class="mobile only">
-    <div class="ui two column stackable grid container" id="mobileAboutGrid">
-    <div class="row">
-        <div class="center aligned sixteen wide column" id="mobileImage"> 
-            <%= image_tag("christian_sorseth.jpg", :class => "ui circular large centered image") %>
+    <div class="ui bottom attached segment">
+        <div class="ui inverted labeled icon right inline vertical sidebar menu">
+          <a class="item">
+            <i class="home icon"></i>
+            Home
+          </a>
+          <a class="item">
+            <i class="info icon"></i>
+            About
+          </a>
+          <a class="item">
+            <i class="student icon"></i>
+            Resume
+          </a>
+          <a class="item">
+            <i class="mail outline icon"></i>
+            Contact
+          </a>
         </div>
-        <div class="center aligned sixteen wide column">
-            <p>
-                <h1 class="about header">WHO IS CHRISTIAN?</h1>
-                <div class="ui list">
-                    <h4 class="ui horizontal divider header">
-                            Education
-                    </h4>
-                    <div class="item">
-                        <i class="student icon"></i> 
-                        <div class="content">
-                            <div class="left floated header">
-                                <%= link_to("NTNU", "https://www.ntnu.no") %>
-                            </div>
-                            <div class="left floated description">
-                                Master's Degree in Information Security (2015 - 2017)
-                            </div>
+        <div class="pusher">
+            <div class="ui basic segment">
+                <div class="ui two column stackable grid container" id="mobileAboutGrid">
+                    <div class="row">
+                        <div class="center aligned sixteen wide column" id="mobileImage"> 
+                            <%= image_tag("christian_sorseth.jpg", :class => "ui circular large centered image") %>
                         </div>
-                    </div>
-                    <div class="item">
-                        <i class="student icon"></i> 
-                        <div class="content">
-                            <div class="left floated header">
-                                <%= link_to("UiS", "http://www.uis.no/") %>
-                            </div>
-                            <div class="left floated content">
-                                Bachelor Degree in Computer Science (2012 - 2015)
-                            </div>
-                        </div>
-                    </div>
-                    <h4 class="ui horizontal divider header" id="experienceDivider">
-                        Experience
-                    </h4>
-                    <div class="item">
-                        <i class="desktop icon"></i> 
-                        <div class="content">
-                            <div class="left floated header">
-                                <%= link_to("Internship - Summer of Code", "https://www.no.capgemini.com/") %>
-                            </div>
-                            <div class="left floated content">
-                                Capgemini Norway (2016)
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <i class="desktop icon"></i> 
-                        <div class="content">
-                            <div class="left floated header">
-                                <%= link_to("Operations Technician", "http://www.tampnet.com/") %>
-                            </div>
-                            <div class="left floated content">
-                                Tampnet (2015)
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <i class="desktop icon"></i> 
-                        <div class="content">
-                            <div class="left floated header">
-                                <%= link_to("Evaluation Committee Member", "https://www.ntnu.no") %>
-                            </div>
-                            <div class="left floated content">
-                                NTNU (2015 - 2017)
-                            </div>
+                        <div class="center aligned sixteen wide column">
+                            <p>
+                                <h1 class="about header">WHO IS CHRISTIAN?</h1>
+                                <div class="ui list">
+                                    <h4 class="ui horizontal divider header">
+                                            Education
+                                    </h4>
+                                    <div class="item">
+                                        <i class="student icon"></i> 
+                                        <div class="content">
+                                            <div class="left floated header">
+                                                <%= link_to("NTNU", "https://www.ntnu.no") %>
+                                            </div>
+                                            <div class="left floated description">
+                                                Master's Degree in Information Security (2015 - 2017)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <i class="student icon"></i> 
+                                        <div class="content">
+                                            <div class="left floated header">
+                                                <%= link_to("UiS", "http://www.uis.no/") %>
+                                            </div>
+                                            <div class="left floated content">
+                                                Bachelor Degree in Computer Science (2012 - 2015)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h4 class="ui horizontal divider header" id="experienceDivider">
+                                        Experience
+                                    </h4>
+                                    <div class="item">
+                                        <i class="desktop icon"></i> 
+                                        <div class="content">
+                                            <div class="left floated header">
+                                                <%= link_to("Internship - Summer of Code", "https://www.no.capgemini.com/") %>
+                                            </div>
+                                            <div class="left floated content">
+                                                Capgemini Norway (2016)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <i class="desktop icon"></i> 
+                                        <div class="content">
+                                            <div class="left floated header">
+                                                <%= link_to("Operations Technician", "http://www.tampnet.com/") %>
+                                            </div>
+                                            <div class="left floated content">
+                                                Tampnet (2015)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <i class="desktop icon"></i> 
+                                        <div class="content">
+                                            <div class="left floated header">
+                                                <%= link_to("Evaluation Committee Member", "https://www.ntnu.no") %>
+                                            </div>
+                                            <div class="left floated content">
+                                                NTNU (2015 - 2017)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </p>
                         </div>
                     </div>
                 </div>
-            </p>
+            </div>
         </div>
     </div>
 </div>
-</div>
+<!--TODO move js to external file-->
+    <script> 
+      $('.ui.sidebar')
+        .sidebar({
+          context: $('.bottom.segment')
+        })
+        .sidebar('attach events', '.menu .item')
+      ;
+    </script>

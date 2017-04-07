@@ -9,10 +9,19 @@
     <%= image_tag("logo.png", :class => "ui circular centered image") %>
   </div>
 <% end %>
+<div class="mobile hidden">
   <div class="right menu">
     <a class="border item" href="<%= dashboard_index_path %>">HOME</a>
     <a class="item" href="<%= about_index_path %>">ABOUT</a>
     <a class="item">RESUME</a>
     <a class="item" id="contact" href="<%= contacts_path %>">CONTACT</a>
+  </div>
+</div>
+<div class="mobile only">
+      <div class="right menu">
+      <a class="right floated item">
+        <i class="sidebar big icon"></i>
+      </a>
+      </div>
   </div>
 </div>
