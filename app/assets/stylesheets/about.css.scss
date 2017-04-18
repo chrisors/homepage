@@ -12,10 +12,6 @@
     padding-bottom: 5rem;
   }
   .ui.list {
- //   font-size: 2em;
-    .item {
- //     font-size: 1.5em;
-    }
     #experienceDivider {
       padding-top: 4rem;
     }
@@ -48,4 +44,7 @@
   [class*="or lower hidden"] {
     display: none !important;
   }
+}
+#pusherContent {
+  border: none !important;
 }
