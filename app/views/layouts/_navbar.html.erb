@@ -4,8 +4,8 @@
     <%= image_tag("logo_inverted.png", :class => "ui circular centered image") %>
   </div>
 <% else %>
-  <div class="ui top attached menu secondary" id="aboutNavbar">
-  <div class="left menu" style="height:125px; width:125px">
+  <div class="ui top fixed menu secondary" id="aboutNavbar">
+  <div class="left menu" style="height:125px; width:125px" id="leftNavbar">
     <%= image_tag("logo.png", :class => "ui circular centered image") %>
   </div>
 <% end %>
@@ -18,7 +18,7 @@
   </div>
 </div>
 <div class="mobile only">
-      <div class="right menu">
+      <div class="right fixed menu">
         <a class="right floated item">
           <i class="sidebar big icon"></i>
         </a>

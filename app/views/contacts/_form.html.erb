@@ -1,46 +1,70 @@
-<div class="ui stackable four column grid" id="aboutGrid">
-    <div class="row">
-        <div class="two wide column"></div>
-        <div class="twelve wide column">
-            <h1>Do you have a question about web development, UX, writing or illustration request? Just want to say hi? Let's chat.</h1></br>
-            <%= form_for Contact.new, :html => {} do |f| %>
-                <div class="ui form">
-                    <div class="two wide fields">
-                        <div class="field">
-                            <%= f.label :firstname %>
-                            <%= f.text_field :firstname, :required => true %>
-                        </div>
-                        <div class="field">
-                            <%= f.label :lastname %>
-                            <%= f.text_field :lastname, :required => true %>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <%= f.label :email %>
-                        <%= f.text_field :email, :required => true %>
-                    </div>
-                    <div class="field">
-                        <%= f.label :subject %>
-                        <%= f.text_field :subject, :required => true %>
-                    </div>
-                    <div class="field">
-                        <%= f.label :message %>
-                        <%= f.text_area :message, :as => :text, :required => true %>
-                    </div>
-                    <%= f.button :SUBMIT, :class => "ui black basic button" %>
-                </div>
-            <% end %>
-        </div>
+<div class="ui bottom attached segment" id="pusherContent">
+    <div class="ui inverted labeled icon right inline vertical sidebar menu">
+        <a class="item" href="<%= dashboard_index_path %>">
+            <i class="home icon"></i>
+            Home
+        </a>
+        <a class="item" href="<%= about_index_path %>">
+            <i class="info icon"></i>
+            About
+        </a>
+        <a class="item">
+            <i class="student icon"></i>
+            Resume
+        </a>
+        <a class="item" href="<%= contacts_path %>">
+            <i class="mail icon"></i>
+            Contact
+        </a>
     </div>
-    <div class="row"> <!--TODO: add links to linkedin ect.-->
-        <div class="two wide column"></div>
-        <div class="twelve wide center aligned column">
-            <div class="icons">
-                <i class="circular linkedin icon"></i>
-                <i class="circular google plus icon"></i>
-                <i class="circular twitter icon"></i>
+    <div class="pusher">
+        <div class="ui basic segment">
+            <div class="ui four column stackable grid container" id="aboutGrid">
+                <div class="row">
+                    <div class="two wide column"></div>
+                    <div class="twelve wide column">
+                        <h1>Do you have a question about web development, UX, writing or illustration request? Just want to say hi? Let's chat.</h1></br>
+                        <%= form_for Contact.new, :html => {} do |f| %>
+                            <div class="ui form" id="contactForm">
+                                <div class="two wide fields">
+                                    <div class="field">
+                                        <%= f.label :firstname %>
+                                        <%= f.text_field :firstname, :required => true %>
+                                    </div>
+                                    <div class="field">
+                                        <%= f.label :lastname %>
+                                        <%= f.text_field :lastname, :required => true %>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <%= f.label :email %>
+                                    <%= f.text_field :email, :required => true %>
+                                </div>
+                                <div class="field">
+                                    <%= f.label :subject %>
+                                    <%= f.text_field :subject, :required => true %>
+                                </div>
+                                <div class="field">
+                                    <%= f.label :message %>
+                                    <%= f.text_area :message, :as => :text, :required => true %>
+                                </div>
+                                <%= f.button :SUBMIT, :class => "ui black basic button" %>
+                            </div>
+                        <% end %>
+                    </div>
+                </div>
+                <div class="row"> <!--TODO: add links to linkedin ect.-->
+                    <div class="two wide column"></div>
+                    <div class="twelve wide center aligned column">
+                        <div class="icons">
+                            <i class="circular linkedin icon"></i>
+                            <i class="circular google plus icon"></i>
+                            <i class="circular twitter icon"></i>
+                        </div>
+                    </div>
+                    <div class="two wide column"></div>
+                </div>
             </div>
         </div>
-        <div class="two wide column"></div>
     </div>
 </div>
