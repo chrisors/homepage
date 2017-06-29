@@ -1,19 +1,63 @@
 <div class="container dashboard">
     <div class="body_container">
-    <div class="ui stackable middle aligned center aligned grid" id="dashboardGrid">
-        <div class="row">
-            <div class="four wide column"></div>
-            <div class="center aligned eight wide column">
-                <h1 id="header">DEVELOPER.</h1>
+        <div class="mobile hidden">
+            <div class="ui stackable middle aligned center aligned grid" id="dashboardGrid">
+                <div class="row">
+                    <div class="four wide column"></div>
+                    <div class="center aligned eight wide column">
+                        <h1 id="header">DEVELOPER.</h1>
+                    </div>
+                    <div class="four wide column"></div>
+                </div>
+                <div class="row" id="buttonRow">
+                    <div class="ui menu secondary">
+                        <a class="item">RESUME</a>
+                        <a class="item" href="<%= contacts_path %>">CONTACT</a>
+                    </div>
+                </div>
             </div>
-            <div class="four wide column"></div>
         </div>
-        <div class="row" id="buttonRow">
-            <div class="ui menu secondary">
-                <a class="item">RESUME</a>
-                <a class="item" href="<%= contacts_path %>">CONTACT</a>
+
+        <div class="mobile only" id="mobileDash">
+            <div class="ui bottom attached segment" id="pusherContent">
+                <div class="ui inverted labeled icon right inline vertical sidebar menu">
+                <a class="item" href="<%= dashboard_index_path %>">
+                    <i class="home icon"></i>
+                    Home
+                </a>
+                <a class="item" href="<%= about_index_path %>">
+                    <i class="info icon"></i>
+                    About
+                </a>
+                <a class="item">
+                    <i class="student icon"></i>
+                    Resume
+                </a>
+                <a class="item" href="<%= contacts_path %>">
+                    <i class="mail icon"></i>
+                    Contact
+                </a>
+                </div>
+                <div class="pusher">
+                    <div class="ui basic segment" id="mainSegment">
+                        <div class="ui column stackable grid container" id="mobileAboutGrid">
+                            <div class="centered row">
+                                <div class="two wide column"></div>
+                                <div class="center aligned twelve wide column">
+                                    <h1 id="header">DEVELOPER.</h1>
+                                </div>
+                                <div class="two wide column"></div>
+                            </div>
+                            <div class="centered row" id="buttonRow">
+                                <div class="ui menu secondary">
+                                    <a class="item">RESUME</a>
+                                    <a class="item" href="<%= contacts_path %>">CONTACT</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </row>
-    </div>
+        </div>
     </div>
 </div>
