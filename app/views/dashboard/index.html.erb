@@ -20,23 +20,24 @@
 
         <div class="mobile only" id="mobileDash">
             <div class="ui bottom attached segment" id="pusherContent">
-                <div class="ui inverted labeled icon right inline vertical sidebar menu">
-                <a class="item" href="<%= dashboard_index_path %>">
-                    <i class="home icon"></i>
-                    Home
-                </a>
-                <a class="item" href="<%= about_index_path %>">
-                    <i class="info icon"></i>
-                    About
-                </a>
-                <a class="item">
-                    <i class="student icon"></i>
-                    Resume
-                </a>
-                <a class="item" href="<%= contacts_path %>">
-                    <i class="mail icon"></i>
-                    Contact
-                </a>
+                <div class="ui inverted labeled icon right inline vertical sidebar menu" id="dashSidebar">
+                    <div class="ui divider" id="sidebarDivider"></div>
+                    <a class="item" href="<%= dashboard_index_path %>">
+                        <i class="home icon"></i>
+                        Home
+                    </a>
+                    <a class="item" href="<%= about_index_path %>">
+                        <i class="info icon"></i>
+                        About
+                    </a>
+                    <a class="item">
+                        <i class="student icon"></i>
+                        Resume
+                    </a>
+                    <a class="item" href="<%= contacts_path %>">
+                        <i class="mail icon"></i>
+                        Contact
+                    </a>
                 </div>
                 <div class="pusher">
                     <div class="ui basic segment" id="mainSegment">
